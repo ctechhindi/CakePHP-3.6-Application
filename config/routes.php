@@ -27,7 +27,12 @@ Router::defaultRouteClass(DashedRoute::class);
 
 Router::scope('/', function (RouteBuilder $routes) {
     
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
+    // Application Root Route
+    $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
+
+    // Users Controller Routes
+    $routes->connect('/login', ['controller' => 'Users', 'action' => 'login']);
+    $routes->connect('/registration', ['controller' => 'Users', 'action' => 'registration']);
 
     $routes->fallbacks(DashedRoute::class);
 });

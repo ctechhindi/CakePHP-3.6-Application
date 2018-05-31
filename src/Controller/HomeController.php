@@ -1,9 +1,9 @@
 <?php
 namespace App\Controller;
 
-class PagesController extends AppController
+class HomeController extends AppController
 {
-    public function home()
+    public function index()
     {
         $this->set('title', 'Welcome to CakePHP 3.6');
         // $this->render('home');

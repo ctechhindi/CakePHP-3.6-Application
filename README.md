@@ -29,5 +29,6 @@ Then visit `http://localhost:8765` to see the welcome page.
 
 # Git Commit's
 
+- Integrate fontawesome and create login and register page
 - Integrate bootstrap menu and footer
 - Installing CakePHP 3.6

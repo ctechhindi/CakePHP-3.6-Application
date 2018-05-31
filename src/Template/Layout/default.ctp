@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= h($title) ?></title>
     <?= $this->Html->css('bootstrap.min') ?>
+    <?= $this->Html->css('font-awesome.min') ?>
     <?= $this->Html->script('jquery-3.2.1.slim.min') ?>
     <?= $this->Html->script('bootstrap.min', ['block' => 'scriptBottom']) ?>
     <?= $this->Html->script('popper.min', ['block' => 'scriptBottom']) ?>
@@ -28,8 +29,17 @@
                 </li>
             </ul>
             <div class="my-2 my-lg-0">
-                <a class="btn btn-success my-2 my-sm-0">Register</a>
-                <a class="btn btn-primary my-2 my-sm-0">Login</a>
+                <?php
+                    echo $this->Html->link('Register',
+                        '/registration',
+                        ['class' => 'btn btn-success my-2 my-sm-0']
+                    );
+                    echo '&nbsp';
+                    echo $this->Html->link('Login',
+                        '/login',
+                        ['class' => 'btn btn-success my-2 my-sm-0']
+                    );
+                ?>
             </div>
         </div>
     </nav>
