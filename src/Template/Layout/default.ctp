@@ -45,7 +45,10 @@
     </nav>
     <br>
 
-    <?= $this->Flash->render() ?>
+    <div class="container">
+        <?= $this->Flash->render() ?>
+    </div>
+    
     <?= $this->fetch('content') ?>
     <br><br><br>
     <!-- Page Footer -->

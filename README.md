@@ -29,6 +29,7 @@ Then visit `http://localhost:8765` to see the welcome page.
 
 # Git Commit's
 
+- Validation Messages Customization
 - Insert Data (User Registration with Database)
 - Form Validation in User Registration Page
 - Creating Multiple Controls in login and register
