@@ -25,3 +25,9 @@ bin/cake server -p 8765
 ```
 
 Then visit `http://localhost:8765` to see the welcome page.
+
+
+# Git Commit's
+
+- Integrate bootstrap menu and footer
+- Installing CakePHP 3.6
