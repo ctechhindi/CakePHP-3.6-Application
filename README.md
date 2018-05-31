@@ -29,8 +29,27 @@ Then visit `http://localhost:8765` to see the welcome page.
 
 # Git Commit's
 
+- Form Validation in User Registration Page
 - Creating Multiple Controls in login and register
 - Use Form Helper for login and register
 - Integrate fontawesome and create login and register page
 - Integrate bootstrap menu and footer
 - Installing CakePHP 3.6
+
+# Database Table
+
+## Users
+
+```sql
+CREATE TABLE `cakephp3.6.local`.`users` ( 
+    `id` INT NOT NULL AUTO_INCREMENT ,  
+    `fullname` VARCHAR(100) NOT NULL ,  
+    `email` VARCHAR(150) NOT NULL ,  
+    `username` VARCHAR(50) NOT NULL ,  
+    `password` TEXT NOT NULL ,  
+    `role` VARCHAR(10) NOT NULL ,  
+    `is_active` TINYINT NOT NULL DEFAULT '0' ,  
+    `created_at` TEXT NOT NULL ,  
+    `update_at` TEXT NOT NULL ,    PRIMARY KEY  (`id`)
+) ENGINE = InnoDB;
+```

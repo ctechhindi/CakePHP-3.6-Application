@@ -17,6 +17,10 @@ class UsersController extends AppController
     public function registration()
     {
         $this->set('title', 'User Registration');
-        
+
+        # Using A Different Validation Set
+        $users = $this->Users->newEntity($this->request->getData(), ['validate' => 'register']);
+        // Set this errors in fields
+        $this->set('users', $users);
     }
 }
