@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <?= $this->Html->link('Home','/', ['class' => 'nav-link']); ?>
                 </li>
             </ul>
             <div class="my-2 my-lg-0">
@@ -47,7 +47,7 @@
 
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
-
+    <br><br><br>
     <!-- Page Footer -->
     <nav class="navbar fixed-bottom navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Watch Full Videos</a>

@@ -17,6 +17,6 @@ class UsersController extends AppController
     public function registration()
     {
         $this->set('title', 'User Registration');
-
+        
     }
 }
