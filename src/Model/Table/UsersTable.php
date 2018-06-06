@@ -25,7 +25,8 @@ class UsersTable extends Table
             ]);
 
         # Username
-        $validator->notEmpty('username')->lengthBetween('username', [4,12]);
+        $validator->notEmpty('username')
+            ->lengthBetween('username', [4,12], 'Please enter a username between 4 & 12');
 
         # Password
         $validator->notEmpty('password');
